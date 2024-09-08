@@ -439,17 +439,33 @@ section {
 --------------------------------------------------------------*/
 
 .video {
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .video iframe {
-  width: 1000px;
+  width: 50px;
   height: auto;
-  max-width: 100%;
   border: none;
+}
+
+.container-vid {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.container-vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*--------------------------------------------------------------
 # Facts
