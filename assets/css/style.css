@@ -446,7 +446,7 @@ section {
 }
 
 .video iframe {
-  width: 200px;
+  width: 1000px;
   height: auto;
   max-width: 100%;
   border: none;
